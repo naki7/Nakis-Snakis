@@ -1,0 +1,50 @@
+.navbar{
+    background: radial-gradient(circle at -10% 50%, rgba(255, 255, 169, 1) 0%, rgba(0, 152, 28, 1) 27%);
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 0.7fr 3fr;
+    height: 95px;
+    position: sticky;
+    top: 0;
+    color: #191f1f;
+    z-index: 1;
+}
+
+.navbar-blur{
+    opacity: 95%;
+}
+
+.logo{
+    line-height: 27px;
+    margin: 0px 20px;
+}
+
+.logo-hide{
+    opacity: 0%;
+}
+
+.nav ul{
+    list-style-type: none;
+    height: 54px;
+    width: 96%;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.nav li{
+    line-height: 4em;
+    align-self: center;
+}
+
+.nav a{
+    color: inherit;
+    text-decoration: none !important;
+}
+
+.navbar li:hover{
+    color: rgb(255, 255, 169);
+    cursor: pointer;
+}
+
+
+

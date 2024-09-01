@@ -1,10 +1,31 @@
+@font-face{
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: 'Lora';
+  src: url('./fonts/Lora-SemiBoldItalic.ttf');
+}
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body p, li, button {
+  font-family: 'Poppins', sans-serif;
+}
+.compInfo p{
+  font-family: 'Lora', serif;
+}
+
+body h1, h3{
+  font-family: 'Lora', serif;
 }
 
 code {

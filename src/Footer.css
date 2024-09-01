@@ -1,0 +1,45 @@
+.Footer{
+    width: 100%;
+    background-color: #191f1f;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Footer .information{
+
+    border-top: 1px solid #00981c;
+
+    padding-top: 20px;
+    width: 90%;
+    
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    color: #ffffa9;
+    font-size: 12px;
+    padding-right: 60px;
+}
+
+section{
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.factory{
+    padding-bottom: 35px;
+}
+
+.Footer p{
+    margin: 0px;
+}
+
+a[tabindex]{
+    color: #00981c;
+}
+
+a[tabindex]:visited{
+    color: #00981c;
+}
+
+a[tabindex]:active{
+    color: #ffffa9;
+}

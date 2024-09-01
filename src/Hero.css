@@ -1,0 +1,22 @@
+
+.hero{
+    background-color: #191f1f;
+    height: 600px;
+    display: flex;
+}
+
+.hero-header{
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    font-size: 150px;
+    
+    background: linear-gradient(to right, #ffffa9, #00981c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.bowl{
+    width: 900px;
+}

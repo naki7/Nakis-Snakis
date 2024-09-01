@@ -1,0 +1,19 @@
+.compInfo{
+    background-color: #191f1f;
+    display: flex;
+    justify-content: space-between;
+}
+
+.compInfo img{
+    height: 600px;
+}
+
+.compInfo p{
+    color: #ffffa9;
+    font-size: 40px;
+    line-height: 70px;
+
+    margin: 0 100px;
+    align-self: center;
+    text-align: center;
+}
