@@ -1,34 +1,23 @@
 .navbar{
     background: radial-gradient(circle at -10% 50%, rgba(255, 255, 169, 1) 0%, rgba(0, 152, 28, 1) 27%);
-    width: 100%;
+    width: 100vw;
     display: inline-grid;
-    grid-template-columns: 0.7fr 3fr;
     height: 95px;
-    position: sticky;
-    top: 0;
     color: #191f1f;
-    z-index: 1;
-}
-
-.navbar-blur{
-    opacity: 95%;
 }
 
 .logo{
     line-height: 27px;
     margin: 0px 20px;
-}
-
-.logo-hide{
-    opacity: 0%;
+    transition-duration: 500ms;
 }
 
 .nav ul{
     list-style-type: none;
     height: 54px;
     width: 96%;
-    display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    gap: 42px;
 }
 
 .nav li{
@@ -47,4 +36,33 @@
 }
 
 
+@media (min-width:640px){
+    .navbar{
+        position: sticky;
+        grid-template-columns: 0.7fr 3fr;
+        z-index: 1;
+        top: 0;
+    }
+    .navbar-blur{
+        opacity: 95%;
+        transition-duration: 500ms;
+    }
+    .logo-hide{
+        opacity: 0%;
+    }
 
+    .nav ul{
+        width: 70vw;
+        justify-content: space-between;
+        justify-content: space-around;
+    }
+    
+    .nav ul #info{
+        display: block;
+        visibility: visible;
+    }
+}
+
+@media (min-width:724px){
+    
+}
