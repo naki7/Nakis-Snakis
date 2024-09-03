@@ -20,7 +20,8 @@
 }
 
 section{
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -42,4 +43,12 @@ a[tabindex]:visited{
 
 a[tabindex]:active{
     color: #ffffa9;
+}
+
+
+
+@media (min-width: 1024px){
+    section{
+        flex-direction: row;
+    }
 }

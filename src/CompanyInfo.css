@@ -1,19 +1,54 @@
 .compInfo{
+    width: 98.9vw;
     background-color: #191f1f;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 3rem;
+}
+
+.compImg{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .compInfo img{
-    height: 600px;
+    width: 100vw;
+    max-width: 600px;
+    max-height: 450px;
 }
 
 .compInfo p{
     color: #ffffa9;
-    font-size: 40px;
-    line-height: 70px;
+    font-size: 2.5rem;
+    line-height: 4rem;
 
     margin: 0 100px;
     align-self: center;
     text-align: center;
+    order: 2;
+}
+
+@media (min-width: 640px){
+    .compInfo p{
+        font-size: 40px;
+        line-height: 70px;
+    }
+}
+
+@media (min-width: 1024px){
+    .compInfo{
+        flex-direction: row;
+    }
+
+    .compImg{
+        width: 40vw;
+    }
+    .compInfo p{
+        order: 0;
+        font-size: 2.5rem;
+        line-height: 4rem;
+        padding-right: 5rem;
+    }
 }

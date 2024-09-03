@@ -2,18 +2,21 @@
     background-color: #191f1f;
     width: 100%;
     padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .products h1{
     color: #00981c;
-    padding-left: 30px;
 }
 
 .products .items{
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 20px;
-    width: 100%;
+    flex-wrap: wrap;
 }
 
 
@@ -22,7 +25,7 @@
     border-radius: 10px;
     width: 320px;
     height: 425px;
-    margin: 0px 20px 20px 30px;
+    margin: 20px 20px 20px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,4 +56,19 @@
 .card button:hover{
     background-color: #191f1f;
     color: #ffffa9;
+}
+
+
+
+@media (min-width: 640px){
+    .products .items{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px){
+    .products .items{
+
+    }
 }
