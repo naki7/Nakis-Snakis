@@ -1,6 +1,6 @@
 .navbar{
     background: radial-gradient(circle at -10% 50%, rgba(255, 255, 169, 1) 0%, rgba(0, 152, 28, 1) 27%);
-    width: 98.9vw;
+    width: 100%;
     display: inline-grid;
     height: 95px;
     color: #191f1f;
@@ -56,13 +56,4 @@
         justify-content: space-between;
         justify-content: space-around;
     }
-    
-    .nav ul #info{
-        display: block;
-        visibility: visible;
-    }
-}
-
-@media (min-width:724px){
-    
 }

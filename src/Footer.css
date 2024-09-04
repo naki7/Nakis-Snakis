@@ -3,6 +3,7 @@
     background-color: #191f1f;
     display: flex;
     justify-content: space-around;
+    padding-bottom: 35px;
 }
 
 .Footer .information{
@@ -13,10 +14,10 @@
     width: 90%;
     
     display: inline-grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     color: #ffffa9;
     font-size: 12px;
-    padding-right: 60px;
+    padding: 30px 60px;
 }
 
 section{
@@ -25,12 +26,13 @@ section{
     justify-content: space-around;
 }
 
-.factory{
-    padding-bottom: 35px;
-}
-
 .Footer p{
     margin: 0px;
+}
+
+.isHidden{
+    display: none;
+    visibility: hidden;
 }
 
 a[tabindex]{
@@ -48,7 +50,17 @@ a[tabindex]:active{
 
 
 @media (min-width: 1024px){
+    .Footer .information{
+        grid-template-columns: 1fr 1fr;
+    }
+
     section{
         flex-direction: row;
     }
+
+    .Footer p{
+        visibility: visible;
+        display: block;
+    }
+    
 }

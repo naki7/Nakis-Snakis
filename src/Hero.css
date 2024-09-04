@@ -4,7 +4,7 @@
     background-color: #191f1f;
     display: flex;
     flex-direction: column;
-    width: 98.9vw;
+    width: 100%;
 }
 
 .hero-header{
@@ -91,7 +91,7 @@
     }
 }
 
-@media (min-width:1320px){
+@media (min-width:1326px){
     .hero-header{
         font-size: 7.5rem;
         padding-right: 4vw;
