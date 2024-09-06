@@ -7,6 +7,9 @@
   src: url('./fonts/Lora-SemiBoldItalic.ttf');
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 body {

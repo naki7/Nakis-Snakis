@@ -24,7 +24,7 @@ export const Products = () =>{
     }
 
     return(
-        <div className='products'>
+        <div className='products' id='Products'>
             <h1>Product Range</h1>
             <div className='items'>
                 <ProductBuilder image= {Macaron1} text= 'Strawberry Burst' price='$1.50'/>

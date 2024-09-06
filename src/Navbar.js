@@ -31,9 +31,9 @@ export const Navbar = () =>{
             </div>
             <div className="nav">
                 <ul>
-                    <li><a href='#info'>Home</a></li>
-                    <li><a href='#products'>Product Range</a></li>
-                    <li><a href='#locations'>Locations</a></li>
+                    <li><a href='#Home'>Home</a></li>
+                    <li><a href='#Products'>Product Range</a></li>
+                    <li><a href='#Footer'>Locations</a></li>
                 </ul>
             </div>
         </div>
