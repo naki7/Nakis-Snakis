@@ -15,7 +15,7 @@
 .nav ul{
     list-style-type: none;
     height: 54px;
-    width: 96%;
+    width: 90%;
     display: flex;
     gap: 42px;
 }
@@ -52,7 +52,7 @@
     }
 
     .nav ul{
-        width: 70vw;
+        width: 65vw;
         justify-content: space-between;
         justify-content: space-around;
     }

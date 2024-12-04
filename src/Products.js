@@ -5,6 +5,7 @@ import Macaron3 from './assets/Macaroon-Golden.jpg';
 import Macaron4 from './assets/Macaroon-Green.jpg';
 import { useState } from 'react';
 import { Cart } from './Cart.js';
+import { CheckoutPage } from './CheckoutPage.js';
 
 export const Products = () =>{
 
@@ -12,6 +13,8 @@ export const Products = () =>{
     const [grape, setGrape] = useState(0);
     const [caram, setCaram] = useState(0);
     const [menth, setMenth] = useState(0);
+
+    const [checkout, setCheckout] = useState (false);
 
 
     const ProductBuilder = (Props) =>{
@@ -46,6 +49,25 @@ export const Products = () =>{
         return console.log(straw, grape, caram, menth);
     }
 
+    const handleSubtract = (codeW) =>{
+        console.log(codeW)
+        if(codeW === 'straw'){
+            console.log(straw);
+            return setStraw(straw - 1);
+        } else if(codeW === 'grape'){
+            return setGrape(grape - 1);
+        } else if(codeW === 'caram'){
+            return setCaram(caram - 1);
+        } else if(codeW === 'menth'){
+            return setMenth(menth - 1);
+        }
+        return console.log(straw, grape, caram, menth);
+    }
+
+    function activateCheckout() {
+        setCheckout(!checkout);
+    }
+
     return(
         <div className='products' id='Products'>
             <h1>Product Range</h1>
@@ -55,7 +77,8 @@ export const Products = () =>{
                 <ProductBuilder image= {Macaron3} text= 'Caramel Syrup' price='$1.99' codeW='caram'/>
                 <ProductBuilder image= {Macaron4} text= 'Menthol Mix' price='$1.50' codeW='menth'/>
             </div>
-            <Cart straw={straw} grape={grape} caram={caram} menth={menth}/>
+            <Cart activateCheckout= {activateCheckout} straw={straw} grape={grape} caram={caram} menth={menth}/>
+            {checkout && <CheckoutPage activateCheckout= {activateCheckout} handleAddition={handleAddition} handleSubtract={handleSubtract} straw={straw} grape={grape} caram={caram} menth={menth}/>}
         </div>
     )
 }

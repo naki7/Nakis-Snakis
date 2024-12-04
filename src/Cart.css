@@ -11,11 +11,17 @@
     border-radius: 3rem;
 }
 
+
 .sCart{
     padding: 20px 0 0 0;
     width: 3.5rem;
     height: auto;
     color: #191f1f;
+}
+
+.sCart:hover{
+    cursor: pointer;
+    color: #ffffa9;
 }
 
 .count{

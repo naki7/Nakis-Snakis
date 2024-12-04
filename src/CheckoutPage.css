@@ -1,0 +1,71 @@
+.order{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.closeBtn{
+    position: absolute;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-color: #191f1f;
+    opacity: 0.7;
+}
+
+.checkoutpage{
+    background-color: #ffffa9;
+    padding: 2rem;
+    opacity: 0.9;
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+}
+
+
+
+.mini{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mini button{
+    height: 2rem;
+    width: 2rem;
+    background-color: #00981c;
+    border-radius: 3rem;
+}
+
+.mini img{
+    height: 16vh;
+}
+
+.mini .flavorBox{
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.mini .flavorTotal{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    background-color: #00981c;
+    position: relative;
+    right: 2rem;
+    top: 1rem;
+}
+
+.mini .flavorTotal p{
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.mini .flavorCost{
+    margin-left: 2rem;
+    font-size: 1.1rem;
+}
