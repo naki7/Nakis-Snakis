@@ -17,7 +17,7 @@
 .checkoutpage{
     background-color: #ffffa9;
     padding: 2rem;
-    opacity: 0.9;
+    opacity: 1;
     position: fixed;
     top: 10vh;
     left: 10vw;
@@ -30,6 +30,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
 .mini button{
@@ -68,4 +69,5 @@
 .mini .flavorCost{
     margin-left: 2rem;
     font-size: 1.1rem;
+    min-width: 60px;
 }

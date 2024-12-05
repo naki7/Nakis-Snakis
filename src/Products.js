@@ -15,6 +15,8 @@ export const Products = () =>{
     const [menth, setMenth] = useState(0);
 
     const [checkout, setCheckout] = useState (false);
+    
+    const [totalCost, setTotalCost] = useState(0);
 
 
     const ProductBuilder = (Props) =>{
@@ -34,31 +36,39 @@ export const Products = () =>{
         )
     }
 
+    const totalHandler = (amount) =>{
+        setTotalCost(totalCost + amount);
+    }
+
     const handleAddition = (codeW) =>{
-        console.log(codeW)
         if(codeW === 'straw'){
-            console.log(straw);
+            totalHandler(1.5);
             return setStraw(straw + 1);
         } else if(codeW === 'grape'){
+            totalHandler(1.75);
             return setGrape(grape + 1);
         } else if(codeW === 'caram'){
+            totalHandler(1.99);
             return setCaram(caram + 1);
         } else if(codeW === 'menth'){
+            totalHandler(1.5);
             return setMenth(menth + 1);
         }
         return console.log(straw, grape, caram, menth);
     }
 
     const handleSubtract = (codeW) =>{
-        console.log(codeW)
         if(codeW === 'straw'){
-            console.log(straw);
+            totalHandler(-1.5);
             return setStraw(straw - 1);
         } else if(codeW === 'grape'){
+            totalHandler(-1.75);
             return setGrape(grape - 1);
         } else if(codeW === 'caram'){
+            totalHandler(-1.99);
             return setCaram(caram - 1);
         } else if(codeW === 'menth'){
+            totalHandler(-1.5);
             return setMenth(menth - 1);
         }
         return console.log(straw, grape, caram, menth);
@@ -78,7 +88,7 @@ export const Products = () =>{
                 <ProductBuilder image= {Macaron4} text= 'Menthol Mix' price='$1.50' codeW='menth'/>
             </div>
             <Cart activateCheckout= {activateCheckout} straw={straw} grape={grape} caram={caram} menth={menth}/>
-            {checkout && <CheckoutPage activateCheckout= {activateCheckout} handleAddition={handleAddition} handleSubtract={handleSubtract} straw={straw} grape={grape} caram={caram} menth={menth}/>}
+            {checkout && <CheckoutPage activateCheckout= {activateCheckout} handleAddition={handleAddition} handleSubtract={handleSubtract} straw={straw} grape={grape} caram={caram} menth={menth} totalCost={totalCost}/>}
         </div>
     )
 }
