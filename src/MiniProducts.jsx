@@ -44,8 +44,10 @@ function MiniProducts(Props) {
                     <h3>Total:</h3>
                     <p>${(totalCost).toFixed(2)}</p>
                 </div>
-                <button className='clear'>Clear</button>
-                <button className='pay'>Purchase</button>
+                <div className='checkoutBtns'>
+                    <button className='clear'>Clear</button>
+                    <button className='pay'>Purchase</button>
+                </div>
             
             </div>
         

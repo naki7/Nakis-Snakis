@@ -30,6 +30,10 @@ section{
     margin: 0px;
 }
 
+.Footer h3{
+    color: #ffffa9;
+}
+
 .isHidden{
     display: none;
     visibility: hidden;
@@ -109,4 +113,12 @@ a[tabindex]:active{
         cursor: text;
     }
     
+}
+
+
+@media (max-width: 350px){
+    .Footer .information{
+        width: 30%;
+        padding-left: 10px;
+    }
 }

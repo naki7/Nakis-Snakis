@@ -67,8 +67,12 @@
     }
 }
 
-@media (min-width: 1024px){
-    .products .items{
+@media (max-width: 350px){
+    .card{
+        width: 280px;
+    }
 
+    .card img{
+        width: 260px;
     }
 }

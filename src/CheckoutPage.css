@@ -15,15 +15,20 @@
 }
 
 .checkoutpage{
+    border-radius: 0.5rem;
     background-color: #ffffa9;
     padding: 2rem;
     opacity: 1;
     position: fixed;
-    top: 10vh;
-    left: 10vw;
+    width: 70vw;
+    height: 80vh;
+    top: 5vh;
+    left: 7vw;
 }
 
-
+.checkoutpage p, h3, button{
+    color: #191f1f;
+}
 
 .mini{
     display: flex;
@@ -31,6 +36,12 @@
     justify-content: space-around;
     align-items: center;
     padding-bottom: 1rem;
+}
+
+.miniGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .mini button{
@@ -70,4 +81,59 @@
     margin-left: 2rem;
     font-size: 1.1rem;
     min-width: 60px;
+}
+
+.bottomModal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.finalAmount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 0.5;
+}
+
+.checkoutBtns button{
+    background-color: #00981c;
+    border-radius: 0.75rem;
+}
+
+
+
+
+
+@media (min-width: 768px){
+    .miniGroup{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .checkoutpage{
+        width: 77vw;
+    }
+
+    .mini{
+        padding-top: 2rem;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    .mini .flavorCost{
+        padding-top: 1rem;
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1100px){
+    .checkoutpage{
+        width: 60vw;
+        left: 16vw;
+    }
 }

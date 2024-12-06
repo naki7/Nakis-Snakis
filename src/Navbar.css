@@ -18,6 +18,8 @@
     width: 90%;
     display: flex;
     gap: 42px;
+    visibility: hidden;
+    display: block;
 }
 
 .nav li{
@@ -55,5 +57,13 @@
         width: 65vw;
         justify-content: space-between;
         justify-content: space-around;
+        visibility:visible;
+        display:flex;
+    }
+}
+
+
+@media (max-width: 350px){
+    .navbar ul{
     }
 }
