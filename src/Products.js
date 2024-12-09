@@ -58,6 +58,9 @@ export const Products = () =>{
     }
 
     const handleSubtract = (codeW) =>{
+        if((straw + grape + caram + menth) === 1){
+            activateCheckout();
+        }
         if(codeW === 'straw'){
             totalHandler(-1.5);
             return setStraw(straw - 1);
@@ -74,6 +77,14 @@ export const Products = () =>{
         return console.log(straw, grape, caram, menth);
     }
 
+    function resetCart(){
+        setStraw(0);
+        setGrape(0);
+        setCaram(0);
+        setMenth(0);
+        activateCheckout();
+    }
+
     function activateCheckout() {
         setCheckout(!checkout);
     }
@@ -88,7 +99,7 @@ export const Products = () =>{
                 <ProductBuilder image= {Macaron4} text= 'Menthol Mix' price='$1.50' codeW='menth'/>
             </div>
             <Cart activateCheckout= {activateCheckout} straw={straw} grape={grape} caram={caram} menth={menth}/>
-            {checkout && <CheckoutPage activateCheckout= {activateCheckout} handleAddition={handleAddition} handleSubtract={handleSubtract} straw={straw} grape={grape} caram={caram} menth={menth} totalCost={totalCost}/>}
+            {checkout && <CheckoutPage activateCheckout= {activateCheckout} handleAddition={handleAddition} handleSubtract={handleSubtract} straw={straw} grape={grape} caram={caram} menth={menth} totalCost={totalCost} resetCart={resetCart}/>}
         </div>
     )
 }

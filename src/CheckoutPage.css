@@ -51,6 +51,14 @@
     border-radius: 3rem;
 }
 
+.mini button:hover{
+    background-color: #191f1f;
+    color: #ffffa9;
+    cursor: pointer;
+}
+
+
+
 .mini img{
     height: 16vh;
 }
@@ -100,10 +108,53 @@
 
 .checkoutBtns button{
     background-color: #00981c;
-    border-radius: 0.75rem;
+    border-radius: 1.3rem;
+    padding: 0.5rem;
 }
 
 
+.checkoutBtns button:hover{
+    background-color: #191f1f;
+    color: #ffffa9;
+    cursor: pointer;
+}
+
+
+
+
+
+.purchasePage{
+    border-radius: 0.5rem;
+    background-color: #ffffa9;
+    padding: 2rem 2rem 4rem;
+    opacity: 1;
+    position: fixed;
+    width: 70vw;
+    height: auto;
+    top: 25vh;
+    left: 7vw;
+    text-align: center;
+}
+
+.purchasePage h3{
+    font-size: 2rem;
+}
+
+.purchasePage span{
+    color: #00981c;
+}
+
+.returnBtn{
+    background-color: #00981c;
+    border-radius: 1.3rem;
+    padding: 0.5rem;
+}
+
+.returnBtn:hover{
+    background-color: #191f1f;
+    color: #ffffa9;
+    cursor: pointer;
+}
 
 
 

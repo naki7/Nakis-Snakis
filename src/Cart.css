@@ -1,7 +1,7 @@
 .icon{
     width: 6rem;
     height: 6rem;
-    background-color: #00981c;
+    background-color: #ffffa9;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -19,9 +19,18 @@
     color: #191f1f;
 }
 
-.sCart:hover{
+.icon:hover{
+    background-color: #191f1f;
     cursor: pointer;
+}
+
+.icon:hover .sCart{
     color: #ffffa9;
+}
+
+.icon:hover .count{
+    color: #191f1f;
+    background-color: #ffffa9;
 }
 
 .count{
@@ -29,7 +38,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffa9;
+    color: #ffffa9;
+    background-color: #191f1f;
     height: 2rem;
     width: 2rem;
     border-radius: 1rem;

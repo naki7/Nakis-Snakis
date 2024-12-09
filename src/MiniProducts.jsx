@@ -4,7 +4,7 @@ import Macaron3 from './assets/Macaroon-Golden.jpg';
 import Macaron4 from './assets/Macaroon-Green.jpg';
 
 function MiniProducts(Props) {
-    const { straw, grape, caram, menth, handleAddition, handleSubtract, totalCost } = Props;
+    const { straw, grape, caram, menth, handleAddition, handleSubtract, totalCost, resetCart, updateCheckout } = Props;
 
     let strawTrue = (straw > 0) ? true : false;
     let grapeTrue = (grape > 0) ? true : false;
@@ -45,8 +45,8 @@ function MiniProducts(Props) {
                     <p>${(totalCost).toFixed(2)}</p>
                 </div>
                 <div className='checkoutBtns'>
-                    <button className='clear'>Clear</button>
-                    <button className='pay'>Purchase</button>
+                    <button className='clear' onClick={resetCart}>Clear</button>
+                    <button className='pay' onClick={updateCheckout}>Purchase</button>
                 </div>
             
             </div>
