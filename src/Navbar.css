@@ -19,11 +19,10 @@
     display: flex;
     gap: 42px;
     visibility: hidden;
-    display: block;
 }
 
 .nav li{
-    line-height: 4em;
+    line-height: 3em;
     align-self: center;
 }
 
@@ -35,6 +34,8 @@
 .navbar li:hover{
     color: rgb(255, 255, 169);
     cursor: pointer;
+    background-color: #191f1f;
+    border-radius: 4rem;
 }
 
 
@@ -55,15 +56,16 @@
 
     .nav ul{
         width: 65vw;
-        justify-content: space-between;
         justify-content: space-around;
         visibility:visible;
         display:flex;
     }
 }
 
-
-@media (max-width: 350px){
-    .navbar ul{
+@media (max-width: 420px){
+    .nav ul{
+        width: 10vw;
     }
 }
+
+

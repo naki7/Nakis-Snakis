@@ -116,7 +116,7 @@ a[tabindex]:active{
 }
 
 
-@media (max-width: 350px){
+@media (max-width: 410px){
     .Footer .information{
         width: 30%;
         padding-left: 10px;

@@ -8,7 +8,7 @@
 .closeBtn{
     position: absolute;
     display: grid;
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
     background-color: #191f1f;
     opacity: 0.7;
@@ -21,7 +21,6 @@
     opacity: 1;
     position: fixed;
     width: 70vw;
-    height: 80vh;
     top: 5vh;
     left: 7vw;
 }
@@ -186,5 +185,40 @@
     .checkoutpage{
         width: 60vw;
         left: 16vw;
+    }
+}
+
+
+@media (max-width: 480px){
+    .checkoutpage{
+        width: 60vw;
+    }
+    .mini{
+        flex-wrap: wrap;
+        padding-bottom: 0.5rem;
+    }
+    .mini .flavorCost{
+        padding-top: 0.8rem;
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0rem 0;
+    }
+    .mini .flavorCost{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    
+    .mini img{
+        height: 10vh;
+    }
+
+    .mini .flavorTotal{
+        height: 1.75rem;
+        width: 1.75rem;
+    }
+    
+    .mini .flavorTotal p{
+        text-align: center;
+        line-height: 0rem;
     }
 }

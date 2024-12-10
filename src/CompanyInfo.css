@@ -52,3 +52,11 @@
         padding-right: 5rem;
     }
 }
+
+@media (max-width: 350px){
+    .compInfo p{
+        margin: 0 10px;
+        order: 0;
+    }
+}
+

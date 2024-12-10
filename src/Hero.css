@@ -97,3 +97,12 @@
         padding-right: 4vw;
     }
 }
+
+
+
+@media (max-width: 350px){
+    .hero-header{
+        display: none;
+        visibility: hidden;
+    }
+}

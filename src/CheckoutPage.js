@@ -24,7 +24,7 @@ export const CheckoutPage = (Props) =>{
                     <button className='closeBtn' onClick={resetCart}/>
                     <div className='purchasePage'>
                         <h3>Thank You for your Purchase!</h3>
-                        <p>Your <span>${totalCost}</span> worth of tasty <span>Naki's Snakis'</span> macaroons will be teleported to you soon!</p>
+                        <p>Your <span>${(totalCost).toFixed(2)}</span> worth of tasty <span>Naki's Snakis'</span> macaroons will be teleported to you soon!</p>
                         <button className='returnBtn' onClick={resetCart}>Return</button>
                     </div>
                 </div>}
