@@ -46,7 +46,7 @@ export const Footer = () =>{
                         <h3>This is a portfolio piece:</h3>
                         <p>created by Joshua 'Naki' Neves</p>
                         <a href="www.nakineves.com" tabIndex='1' target="_blank"><p>Click Here to access my portfolio</p></a>
-                        <p>LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/joshua-neves-54baa6196/" tabIndex='1' target="_blank"><p>LinkedIn</p></a>
                     </div>
                 </section>
             </div>
